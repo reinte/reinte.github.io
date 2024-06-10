@@ -7,5 +7,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://reinte.github.io/landing-page',
+  base: '/landing-page/',
   integrations: [mdx(), sitemap(), tailwind()]
 });
