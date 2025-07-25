@@ -1,4 +1,5 @@
 ---
+import PersonalCard from '../components/PersonalCard.astro';
 import Layout from '../layouts/BlogPost.astro';
 ---
 
@@ -8,7 +9,7 @@ import Layout from '../layouts/BlogPost.astro';
 	pubDate={new Date('June 09 2024')}
 	heroImage="/bgutmach.jpg"
 >
-	<h4>Colaboradores</h4>
+	<h4 class="font-semibold">Colaboradores</h4>
 	<div class="flex w-full items-stretch justify-center gap-5 flex-wrap">
 		<div class="flex flex-col p-5 rounded-lg shadow-2xl w-60">
 			<img src="/ti.png" alt="Carrera de Ingenieria en Tecnologias de la Informacion" class="w-52 align-middle object-center" />
@@ -27,11 +28,31 @@ import Layout from '../layouts/BlogPost.astro';
 			<div class="font-medium mt-5 text-center leading-tight text-lg md:text-xl flex-grow">Microsoft Learn Student Ambassadors</div>
 		</div>
 	</div>
+
 	<hr class="my-10">
-	<h4>Miembros</h4>
-		Soon!
+
+	<h4 class="font-semibold">Miembros</h4>
+	<div class="flex w-full items-stretch justify-center gap-5 flex-wrap">
+		<!-- Card de Miembro -->
+		<PersonalCard
+			name="Josue"
+			role="Fundador"
+			description="Apasionado por la IA y el desarrollo web. Encargado de coordinar actividades y fomentar el trabajo en equipo."
+			image="/miembros/josue.png"
+			github="https://github.com/jossuema"
+			linkedin="https://www.linkedin.com/in/manuel-josue-malla/"
+		/>
+		<PersonalCard
+			name="Karla Aguilar"
+			role="Fundador"
+			description="Ingeniera en Tecnologías de la Información, apasionada por construir soluciones digitales inteligentes y eficientes."
+			image="/miembros/karla.jpg"
+			github="https://github.com/Cici160401"
+			linkedin="https://www.linkedin.com/in/karla160401"
+		/>
+	</div>
 	<hr class="my-10">
-	<h4>Codigo de etica</h4>
+	<h4 class="font-semibold">Codigo de etica</h4>
 	<p>
 		El Club de Investigación, innovación y tecnología de la Universidad Técnica de Machala (REINTE) se compromete a fomentar la excelencia en el estudio y desarrollo de la tecnología, promoviendo un ambiente de respeto, inclusión, aprendizaje continuo y responsabilidad ética entre todos sus miembros. Este código de ética es un documento vivo, sujeto a revisiones y actualizaciones periódicas para reflejar los cambios en nuestra comunidad y en el campo de la tecnología. Todos los miembros deberán contribuir a su desarrollo y fortalecimiento. Cualquier violación del código será tratada de manera seria y puede resultar en acciones correctivas, incluyendo la posible exclusión del club.
 	</p>
